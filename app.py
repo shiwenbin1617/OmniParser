@@ -22,7 +22,7 @@ caption_model_processor = get_caption_model_processor(model_name="florence2",
                                                       model_name_or_path="weights/icon_caption_florence")
 
 # 设置设备
-DEVICE = torch.device('mps')
+DEVICE = torch.device('auto')
 
 
 class ProcessResponse(BaseModel):
